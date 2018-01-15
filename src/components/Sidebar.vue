@@ -11,10 +11,10 @@
         <router-link :to="{ path: 'groups' }">Groups</router-link>
       </li>
       <li>
-        <router-link :to="{ path: 'organizational_units' }">Organizational Units</router-link>
+        <router-link :to="{ path: 'ous' }">Organizational Units</router-link>
       </li>
       <li>
-        <router-link :to="{ path: 'security' }">Security</router-link>
+        <router-link :to="{ path: 'sos' }">Security</router-link>
       </li>
     </ul>
   </div>

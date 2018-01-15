@@ -26,12 +26,12 @@ export default new Router({
       component: Groups,
     },
     {
-      path: '/organizational_units',
+      path: '/ous',
       name: 'ounits',
       component: OUnits,
     },
     {
-      path: '/security',
+      path: '/sos',
       name: 'security',
       component: Security,
     },
