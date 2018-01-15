@@ -2,6 +2,9 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Main from '@/components/Main';
 import Users from '@/components/Users';
+import Groups from '@/components/Groups';
+import OUnits from '@/components/OrganizationalUnits';
+import Security from '@/components/Security';
 
 Vue.use(Router);
 
@@ -16,6 +19,21 @@ export default new Router({
       path: '/users',
       name: 'users',
       component: Users,
+    },
+    {
+      path: '/groups',
+      name: 'groups',
+      component: Groups,
+    },
+    {
+      path: '/organizational_units',
+      name: 'ounits',
+      component: OUnits,
+    },
+    {
+      path: '/security',
+      name: 'security',
+      component: Security,
     },
   ],
 });

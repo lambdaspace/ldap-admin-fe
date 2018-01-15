@@ -8,13 +8,13 @@
         <router-link :to="{ path: 'users' }">Users</router-link>
       </li>
       <li>
-        <router-link :to="{ path: 'users' }">Groups</router-link>
+        <router-link :to="{ path: 'groups' }">Groups</router-link>
       </li>
       <li>
-        <router-link :to="{ path: 'users' }">Organizational Units</router-link>
+        <router-link :to="{ path: 'organizational_units' }">Organizational Units</router-link>
       </li>
       <li>
-        <router-link :to="{ path: 'users' }">Security</router-link>
+        <router-link :to="{ path: 'security' }">Security</router-link>
       </li>
     </ul>
   </div>
