@@ -25,3 +25,10 @@ export default {
   name: 'Sidebar',
 };
 </script>
+
+<style>
+  .sidebar{
+    order: 1;
+    flex: 1;
+  }
+</style>

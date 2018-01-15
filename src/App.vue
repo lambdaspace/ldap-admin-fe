@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <sidebar/>
-    <router-view/>
+    <div class="main">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -16,5 +18,11 @@ export default {
 
 <style>
 #app {
+  display: flex;
+  width: 100%;
+}
+.main {
+  order: 1;
+  flex: 5;
 }
 </style>
