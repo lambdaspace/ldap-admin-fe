@@ -1,16 +1,14 @@
 <template>
-    <div>
-        Users component
-    </div>
+  <div>
+    Users component
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Users',
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>
-
