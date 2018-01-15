@@ -23,6 +23,6 @@ export default {
 }
 .main {
   order: 1;
-  flex: 5;
+  flex: 7;
 }
 </style>
