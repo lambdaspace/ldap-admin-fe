@@ -17,7 +17,15 @@
     "normalize.css": "^7.0.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "bootstrap": "^4.0.0-beta.2",
+    "chartist": "^0.11.0",
+    "es6-promise": "^4.1.1",
+    "google-maps": "^3.2.1",
+    "v-tooltip": "^2.0.0-rc.1",
+    "vue-clickaway": "^2.1.0",
+    "vue-notifyjs": "^0.2.0",
+    "vue2-google-maps": "^0.8.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
