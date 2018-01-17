@@ -38,9 +38,9 @@
   </div>
 </template>
 <script>
-  import LTable from 'src/components/UIComponents/Table.vue'
-  import Card from 'src/components/UIComponents/Cards/Card.vue'
-  const tableColumns = ['Id', 'Name', 'Salary', 'Country', 'City']
+  import LTable from '@/components/UIComponents/Table';
+  import Card from '@/components/UIComponents/Cards/Card';
+  const tableColumns = ['Id', 'Name', 'Salary', 'Country', 'City'];
   const tableData = [{
     id: 1,
     name: 'Dakota Rice',

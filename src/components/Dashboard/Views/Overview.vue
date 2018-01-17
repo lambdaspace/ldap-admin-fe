@@ -170,11 +170,11 @@
   </div>
 </template>
 <script>
-  import ChartCard from 'src/components/UIComponents/Cards/ChartCard.vue'
-  import StatsCard from 'src/components/UIComponents/Cards/StatsCard.vue'
-  import Card from 'src/components/UIComponents/Cards/Card.vue'
-  import LTable from 'src/components/UIComponents/Table.vue'
-  import Checkbox from 'src/components/UIComponents/Inputs/Checkbox.vue'
+import ChartCard from '@/components/UIComponents/Cards/ChartCard';
+import StatsCard from '@/components/UIComponents/Cards/StatsCard';
+import Card from '@/components/UIComponents/Cards/Card';
+import LTable from '@/components/UIComponents/Table';
+import Checkbox from '@/components/UIComponents/Inputs/Checkbox';
 
   export default {
     components: {

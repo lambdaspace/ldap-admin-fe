@@ -4,7 +4,7 @@
   </transition>
 </template>
 <script>
-  export default {}
+export default {};
 </script>
 <style>
   .fade-enter-active,

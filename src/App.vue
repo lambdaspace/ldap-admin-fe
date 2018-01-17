@@ -2,6 +2,7 @@
   <div id="app">
     <sidebar/>
     <div class="main">
+      <notifications/>
       <router-view/>
     </div>
   </div>
