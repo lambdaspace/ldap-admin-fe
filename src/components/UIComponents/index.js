@@ -1,13 +1,13 @@
-import Checkbox from './Inputs/Checkbox.vue';
-import Radio from './Inputs/Radio.vue';
-import FormGroupInput from './Inputs/formGroupInput.vue';
+import Checkbox from './Inputs/Checkbox';
+import Radio from './Inputs/Radio';
+import FormGroupInput from './Inputs/formGroupInput';
 
-import DropDown from './Dropdown.vue';
-import Table from './Table.vue';
+import DropDown from './Dropdown';
+import Table from './Table';
 
-import Card from './Cards/Card.vue';
-import ChartCard from './Cards/ChartCard.vue';
-import StatsCard from './Cards/StatsCard.vue';
+import Card from './Cards/Card';
+import ChartCard from './Cards/ChartCard';
+import StatsCard from './Cards/StatsCard';
 
 import SidebarPlugin from './SidebarPlugin';
 
