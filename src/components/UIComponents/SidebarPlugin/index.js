@@ -1,5 +1,5 @@
-import Sidebar from './SideBar.vue'
-import SidebarLink from './SidebarLink.vue'
+import Sidebar from './SideBar.vue';
+import SidebarLink from './SidebarLink.vue';
 
 const SidebarStore = {
   showSidebar: false,
@@ -7,33 +7,33 @@ const SidebarStore = {
     {
       name: 'Dashboard',
       icon: 'ti-panel',
-      path: '/admin/overview'
-    }
+      path: '/admin/overview',
+    },
   ],
-  displaySidebar (value) {
-    this.showSidebar = value
-  }
-}
+  displaySidebar(value) {
+    this.showSidebar = value;
+  },
+};
 
 const SidebarPlugin = {
 
-  install (Vue) {
+  install(Vue) {
     Vue.mixin({
-      data () {
+      data() {
         return {
-          sidebarStore: SidebarStore
-        }
-      }
-    })
+          sidebarStore: SidebarStore,
+        };
+      },
+    });
 
     Object.defineProperty(Vue.prototype, '$sidebar', {
-      get () {
-        return this.$root.sidebarStore
-      }
-    })
-    Vue.component('side-bar', Sidebar)
-    Vue.component('sidebar-link', SidebarLink)
-  }
-}
+      get() {
+        return this.$root.sidebarStore;
+      },
+    });
+    Vue.component('side-bar', Sidebar);
+    Vue.component('sidebar-link', SidebarLink);
+  },
+};
 
-export default SidebarPlugin
+export default SidebarPlugin;

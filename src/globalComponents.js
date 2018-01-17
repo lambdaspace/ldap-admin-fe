@@ -10,6 +10,6 @@ const GlobalComponents = {
     Vue.component('fg-input', fgInput);
     Vue.component('drop-down', DropDown);
   },
-}
+};
 
 export default GlobalComponents;

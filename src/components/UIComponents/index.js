@@ -1,17 +1,17 @@
-import Checkbox from './Inputs/Checkbox.vue'
-import Radio from './Inputs/Radio.vue'
-import FormGroupInput from './Inputs/formGroupInput.vue'
+import Checkbox from './Inputs/Checkbox.vue';
+import Radio from './Inputs/Radio.vue';
+import FormGroupInput from './Inputs/formGroupInput.vue';
 
-import DropDown from './Dropdown.vue'
-import Table from './Table.vue'
+import DropDown from './Dropdown.vue';
+import Table from './Table.vue';
 
-import Card from './Cards/Card.vue'
-import ChartCard from './Cards/ChartCard.vue'
-import StatsCard from './Cards/StatsCard.vue'
+import Card from './Cards/Card.vue';
+import ChartCard from './Cards/ChartCard.vue';
+import StatsCard from './Cards/StatsCard.vue';
 
-import SidebarPlugin from './SidebarPlugin'
+import SidebarPlugin from './SidebarPlugin';
 
-let components = {
+const components = {
   Checkbox,
   Radio,
   FormGroupInput,
@@ -20,7 +20,7 @@ let components = {
   StatsCard,
   Table,
   DropDown,
-  SidebarPlugin
-}
+  SidebarPlugin,
+};
 
-export default components
+export default components;

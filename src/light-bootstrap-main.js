@@ -21,11 +21,11 @@ import 'es6-promise/auto';
  * This is the main Light Bootstrap Dashboard Vue plugin where dashboard related plugins are registerd.
  */
 export default {
-  install (Vue) {
-    Vue.use(GlobalComponents)
-    Vue.use(GlobalDirectives)
-    Vue.use(SideBar)
-    Vue.use(Notifications)
-    Vue.use(VTooltip)
-  }
-}
+  install(Vue) {
+    Vue.use(GlobalComponents);
+    Vue.use(GlobalDirectives);
+    Vue.use(SideBar);
+    Vue.use(Notifications);
+    Vue.use(VTooltip);
+  },
+};
