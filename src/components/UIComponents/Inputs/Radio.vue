@@ -20,7 +20,7 @@ export default {
   name: "PRadio",
   props: {
     label: { type: [String, Number], default: () => [] },
-    disabled: { type: [Boolean, String], default: () => [] },
+    disabled: { type: [Boolean, String], default: () => "" },
     value: { type: [String, Boolean], default: () => [] },
     inline: { type: Boolean, default: () => false }
   },
