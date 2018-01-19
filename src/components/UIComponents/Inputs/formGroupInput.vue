@@ -1,13 +1,19 @@
 <template>
-  <div class="form-group" :class="{'input-group': hasIcon}">
+  <div
+    class="form-group"
+    :class="{'input-group': hasIcon}">
     <slot name="label">
-      <label v-if="label" class="control-label">
-        {{label}}
+      <label
+        v-if="label"
+        class="control-label">
+        {{ label }}
       </label>
     </slot>
     <slot name="addonLeft">
-      <span v-if="addonLeftIcon" class="input-group-addon">
-        <i :class="addonLeftIcon"></i>
+      <span
+        v-if="addonLeftIcon"
+        class="input-group-addon">
+        <i :class="addonLeftIcon"/>
       </span>
     </slot>
     <input
@@ -16,31 +22,38 @@
       v-bind="$attrs"
       class="form-control"
       aria-describedby="addon-right addon-left">
-    <slot></slot>
+    <slot/>
     <slot name="addonRight">
-      <span v-if="addonRightIcon" class="input-group-addon">
-        <i :class="addonRightIcon"></i>
+      <span
+        v-if="addonRightIcon"
+        class="input-group-addon">
+        <i :class="addonRightIcon"/>
       </span>
     </slot>
   </div>
 </template>
 <script>
-  export default {
-    inheritAttrs: false,
-    name: 'fg-input',
-    props: {
-      label: String,
-      value: [String, Number],
-      addonRightIcon: String,
-      addonLeftIcon: String
-    },
-    computed: {
-      hasIcon () {
-        const {addonRight, addonLeft} = this.$slots
-        return addonRight !== undefined || addonLeft !== undefined || this.addonRightIcon !== undefined || this.addonLeftIcon !== undefined
-      }
+export default {
+  name: "FgInput",
+  inheritAttrs: false,
+  props: {
+    label: { type: String, default: () => "" },
+    value: { type: [String, Number], default: () => [] },
+    addonRightIcon: { type: String, default: () => "" },
+    addonLeftIcon: { type: String, default: () => "" }
+  },
+  computed: {
+    hasIcon() {
+      const { addonRight, addonLeft } = this.$slots;
+      return (
+        addonRight !== undefined ||
+        addonLeft !== undefined ||
+        this.addonRightIcon !== undefined ||
+        this.addonLeftIcon !== undefined
+      );
     }
   }
+};
 </script>
 <style>
 

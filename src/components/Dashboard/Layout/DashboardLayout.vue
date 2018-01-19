@@ -1,44 +1,42 @@
 <template>
   <div class="wrapper">
     <side-bar>
-      <mobile-menu slot="content"></mobile-menu>
+      <mobile-menu slot="content"/>
       <sidebar-link to="/admin/overview">
-        <i class="nc-icon nc-chart-pie-35"></i>
+        <i class="nc-icon nc-chart-pie-35"/>
         <p>Dashboard</p>
       </sidebar-link>
       <sidebar-link to="/admin/user">
-        <i class="nc-icon nc-circle-09"></i>
+        <i class="nc-icon nc-circle-09"/>
         <p>User Profile</p>
       </sidebar-link>
       <sidebar-link to="/admin/table-list">
-        <i class="nc-icon nc-notes"></i>
+        <i class="nc-icon nc-notes"/>
         <p>Table list</p>
       </sidebar-link>
       <sidebar-link to="/admin/typography">
-        <i class="nc-icon nc-paper-2"></i>
+        <i class="nc-icon nc-paper-2"/>
         <p>Typography</p>
       </sidebar-link>
       <sidebar-link to="/admin/icons">
-        <i class="nc-icon nc-atom"></i>
+        <i class="nc-icon nc-atom"/>
         <p>Icons</p>
       </sidebar-link>
       <sidebar-link to="/admin/maps">
-        <i class="nc-icon nc-pin-3"></i>
+        <i class="nc-icon nc-pin-3"/>
         <p>Maps</p>
       </sidebar-link>
       <sidebar-link to="/admin/notifications">
-        <i class="nc-icon nc-bell-55"></i>
+        <i class="nc-icon nc-bell-55"/>
         <p>Notifications</p>
       </sidebar-link>
     </side-bar>
     <div class="main-panel">
-      <top-navbar></top-navbar>
+      <top-navbar/>
 
-      <dashboard-content @click="toggleSidebar">
+      <dashboard-content @click="toggleSidebar"/>
 
-      </dashboard-content>
-
-      <content-footer></content-footer>
+      <content-footer/>
     </div>
   </div>
 </template>
@@ -46,24 +44,24 @@
 
 </style>
 <script>
-  import TopNavbar from './TopNavbar.vue'
-  import ContentFooter from './ContentFooter.vue'
-  import DashboardContent from './Content.vue'
-  import MobileMenu from './MobileMenu.vue'
-  export default {
-    components: {
-      TopNavbar,
-      ContentFooter,
-      DashboardContent,
-      MobileMenu
-    },
-    methods: {
-      toggleSidebar () {
-        if (this.$sidebar.showSidebar) {
-          this.$sidebar.displaySidebar(false)
-        }
+import TopNavbar from "./TopNavbar";
+import ContentFooter from "./ContentFooter";
+import DashboardContent from "./Content";
+import MobileMenu from "./MobileMenu";
+
+export default {
+  components: {
+    TopNavbar,
+    ContentFooter,
+    DashboardContent,
+    MobileMenu
+  },
+  methods: {
+    toggleSidebar() {
+      if (this.$sidebar.showSidebar) {
+        this.$sidebar.displaySidebar(false);
       }
     }
   }
-
+};
 </script>

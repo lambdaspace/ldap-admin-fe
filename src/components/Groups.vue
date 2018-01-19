@@ -6,9 +6,9 @@
 
 <script>
 export default {
-  name: 'Groups',
+  name: "Groups",
   data() {
     return {};
-  },
+  }
 };
 </script>

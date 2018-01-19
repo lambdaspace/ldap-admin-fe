@@ -6,9 +6,9 @@
 
 <script>
 export default {
-  name: 'OrganizationalUnits',
+  name: "OrganizationalUnits",
   data() {
     return {};
-  },
+  }
 };
 </script>

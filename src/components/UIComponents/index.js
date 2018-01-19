@@ -1,15 +1,15 @@
-import Checkbox from './Inputs/Checkbox';
-import Radio from './Inputs/Radio';
-import FormGroupInput from './Inputs/formGroupInput';
+import Checkbox from "./Inputs/Checkbox";
+import Radio from "./Inputs/Radio";
+import FormGroupInput from "./Inputs/formGroupInput";
 
-import DropDown from './Dropdown';
-import Table from './Table';
+import DropDown from "./Dropdown";
+import Table from "./Table";
 
-import Card from './Cards/Card';
-import ChartCard from './Cards/ChartCard';
-import StatsCard from './Cards/StatsCard';
+import Card from "./Cards/Card";
+import ChartCard from "./Cards/ChartCard";
+import StatsCard from "./Cards/StatsCard";
 
-import SidebarPlugin from './SidebarPlugin';
+import SidebarPlugin from "./SidebarPlugin";
 
 const components = {
   Checkbox,
@@ -20,7 +20,7 @@ const components = {
   StatsCard,
   Table,
   DropDown,
-  SidebarPlugin,
+  SidebarPlugin
 };
 
 export default components;
