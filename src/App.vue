@@ -9,23 +9,22 @@
 </template>
 
 <script>
-import Sidebar from './components/Sidebar';
+import Sidebar from "./components/Sidebar";
 
 export default {
-  name: 'App',
-  components: { Sidebar },
+  name: "App",
+  components: { Sidebar }
 };
 </script>
 
 <style>
-  .vue-notifyjs.notifications{
+.vue-notifyjs.notifications {
   .list-move {
     transition: transform 0.3s, opacity 0.4s;
   }
   .list-item {
     display: inline-block;
     margin-right: 10px;
-
   }
   .list-enter-active {
     transition: transform 0.2s ease-in, opacity 0.4s ease-in;
@@ -37,11 +36,10 @@ export default {
   .list-enter {
     opacity: 0;
     transform: scale(1.1);
-
   }
   .list-leave-to {
     opacity: 0;
     transform: scale(1.2, 0.7);
   }
-  }
+}
 </style>

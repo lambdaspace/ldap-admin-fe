@@ -84,14 +84,13 @@
   </div>
 </template>
 <script>
-  import Card from '@/components/UIComponents/Cards/Card';
+import Card from "@/components/UIComponents/Cards/Card";
 
-  export default {
-    components: {
-      Card
-    }
+export default {
+  components: {
+    Card
   }
-
+};
 </script>
 <style>
 

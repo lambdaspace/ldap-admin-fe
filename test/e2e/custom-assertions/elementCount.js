@@ -7,19 +7,23 @@
 // For more information on custom assertions see:
 // http://nightwatchjs.org/guide#writing-custom-assertions
 
-exports.assertion = function (selector, count) {
+exports.assertion = function(selector, count) {
   this.message = `Testing if element <${selector}> has count: ${count}`;
   this.expected = count;
-  this.pass = function (val) {
+  this.pass = function(val) {
     return val === this.expected;
   };
-  this.value = function (res) {
+  this.value = function(res) {
     return res.value;
   };
-  this.command = function (cb) {
+  this.command = function(cb) {
     const self = this;
-    return this.api.execute(selector => document.querySelectorAll(selector).length, [selector], (res) => {
-      cb.call(self, res);
-    });
+    return this.api.execute(
+      selector => document.querySelectorAll(selector).length,
+      [selector],
+      res => {
+        cb.call(self, res);
+      }
+    );
   };
 };
