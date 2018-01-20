@@ -14,7 +14,7 @@
               <h4 class="card-title">105GB</h4>
             </div>
             <div slot="footer">
-              <i class="fa fa-refresh"/>Updated now
+              <font-awesome-icon icon="refresh"/>Updated now
             </div>
           </stats-card>
         </div>
@@ -31,7 +31,7 @@
               <h4 class="card-title">$1,345</h4>
             </div>
             <div slot="footer">
-              <i class="fa fa-calendar-o"/>Last day
+              <font-awesome-icon icon="calendar-o"/>Last day
             </div>
           </stats-card>
         </div>
@@ -48,7 +48,7 @@
               <h4 class="card-title">23</h4>
             </div>
             <div slot="footer">
-              <i class="fa fa-clock-o"/>Last day
+              <font-awesome-icon icon="clock-o"/>Last day
             </div>
           </stats-card>
         </div>
@@ -65,7 +65,7 @@
               <h4 class="card-title">+45</h4>
             </div>
             <div slot="footer">
-              <i class="fa fa-refresh"/>Updated now
+              <font-awesome-icon icon="refresh"/>Updated now
             </div>
           </stats-card>
         </div>
@@ -83,13 +83,19 @@
             </template>
             <template slot="footer">
               <div class="legend">
-                <i class="fa fa-circle text-info"/> Open
-                <i class="fa fa-circle text-danger"/> Click
-                <i class="fa fa-circle text-warning"/> Click Second Time
+                <font-awesome-icon
+                  icon="circle"
+                  class="text-info"/> Open
+                <font-awesome-icon
+                  icon="circle"
+                  class="text-danger"/> Click
+                <font-awesome-icon
+                  icon="circle"
+                  class="text-waring"/> Click Second Time
               </div>
               <hr>
               <div class="stats">
-                <i class="fa fa-history"/> Updated 3 minutes ago
+                <font-awesome-icon icon="history" /> Updated 3 minutes ago
               </div>
             </template>
           </chart-card>
@@ -105,13 +111,19 @@
             </template>
             <template slot="footer">
               <div class="legend">
-                <i class="fa fa-circle text-info"/> Open
-                <i class="fa fa-circle text-danger"/> Bounce
-                <i class="fa fa-circle text-warning"/> Unsubscribe
+                <font-awesome-icon
+                  icon="circle"
+                  class="text-info"/> Open
+                <font-awesome-icon
+                  icon="circle"
+                  class="text-danger"/> Bounce
+                <font-awesome-icon
+                  icon="circle"
+                  class="text-waring"/> Unsubscribe
               </div>
               <hr>
               <div class="stats">
-                <i class="fa fa-clock-o"/> Campaign sent 2 days ago
+                <font-awesome-icon icon="clock-o"/> Campaign sent 2 days ago
               </div>
             </template>
           </chart-card>
@@ -131,12 +143,16 @@
             </template>
             <template slot="footer">
               <div class="legend">
-                <i class="fa fa-circle text-info"/> Tesla Model S
-                <i class="fa fa-circle text-danger"/> BMW 5 Series
+                <font-awesome-icon
+                  icon="circle"
+                  class="text-info"/> Tesla Model S
+                <font-awesome-icon
+                  icon="circle"
+                  class="text-danger"/> BMW 5 Series
               </div>
               <hr>
               <div class="stats">
-                <i class="fa fa-check"/> Data information certified
+                <font-awesome-icon icon="times" /> Data information certified
               </div>
             </template>
           </chart-card>
@@ -163,13 +179,13 @@
                     type="button"
                     class="btn-simple btn btn-xs btn-info"
                     v-tooltip.top-center="editTooltip">
-                    <i class="fa fa-edit"/>
+                    <font-awesome-icon icon="edit" />
                   </button>
                   <button
                     type="button"
                     class="btn-simple btn btn-xs btn-danger"
                     v-tooltip.top-center="deleteTooltip">
-                    <i class="fa fa-times"/>
+                    <font-awesome-icon icon="times" />
                   </button>
                 </td>
               </template>
@@ -177,7 +193,7 @@
             <div class="footer">
               <hr>
               <div class="stats">
-                <i class="fa fa-history"/> Updated 3 minutes ago
+                <font-awesome-icon icon="history" /> Updated 3 minutes ago
               </div>
             </div>
           </card>
@@ -193,6 +209,17 @@ import StatsCard from "@/components/UIComponents/Cards/StatsCard";
 import Card from "@/components/UIComponents/Cards/Card";
 import LTable from "@/components/UIComponents/Table";
 import Checkbox from "@/components/UIComponents/Inputs/Checkbox";
+import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
+import {
+  faEdit,
+  faCheck,
+  faHistory,
+  faCircle,
+  time,
+  faRefresh,
+  faCalendarO,
+  faClockO
+} from "@fortawesome/fontawesome-free-solid";
 
 export default {
   components: {
@@ -200,7 +227,16 @@ export default {
     Card,
     LTable,
     ChartCard,
-    StatsCard
+    StatsCard,
+    FontAwesomeIcon,
+    faEdit,
+    faCheck,
+    faHistory,
+    faCircle,
+    time,
+    faRefresh,
+    faCalendarO,
+    faClockO
   },
   data() {
     return {
