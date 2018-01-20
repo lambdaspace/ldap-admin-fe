@@ -2,7 +2,7 @@
   <ul class="nav nav-mobile-menu">
     <drop-down>
       <template slot="title">
-        <i class="fa fa-globe"/>
+        <font-awesome-icon icon="globe" />
         <b class="caret"/>
         <span class="notification">5 Notifications</span>
       </template>
@@ -60,10 +60,12 @@
 </template>
 <script>
 import DropDown from "@/components/UIComponents/Dropdown";
+import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
 
 export default {
   components: {
-    DropDown
+    DropDown,
+    FontAwesomeIcon
   }
 };
 </script>

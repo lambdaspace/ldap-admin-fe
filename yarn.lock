@@ -62,6 +62,26 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
+"@fortawesome/fontawesome-common-types@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.1.1.tgz#28c78607ffd2d246abfcc09bacd28490952280af"
+
+"@fortawesome/fontawesome-free-solid@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free-solid/-/fontawesome-free-solid-5.0.4.tgz#6f4eef5a624b086aec359aa7e41c0eb3dd4e44c5"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.1.1"
+
+"@fortawesome/fontawesome@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome/-/fontawesome-1.1.2.tgz#ddc83c2a747ebd83eb5970eaebfb257aa41c8bb4"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.1.1"
+
+"@fortawesome/vue-fontawesome@^0.0.22":
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.0.22.tgz#720457bda0e5866265e5e0f8fe4fbd857fa5653f"
+
 "@types/node@*":
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-9.3.0.tgz#3a129cda7c4e5df2409702626892cb4b96546dd5"
