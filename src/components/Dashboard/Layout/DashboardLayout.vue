@@ -30,6 +30,10 @@
         <i class="nc-icon nc-bell-55"/>
         <p>Notifications</p>
       </sidebar-link>
+      <sidebar-link to="/users">
+        <i class="nc-icon nc-circle-09"/>
+        <p>Users</p>
+      </sidebar-link>
     </side-bar>
     <div class="main-panel">
       <top-navbar/>

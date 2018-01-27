@@ -36,7 +36,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import LTable from "@/components/UIComponents/Table";
 import Card from "@/components/UIComponents/Cards/Card";
@@ -80,7 +79,6 @@ const tableData = [
   }
 ];
 export default {
-  name: "Users",
   components: {
     LTable,
     Card

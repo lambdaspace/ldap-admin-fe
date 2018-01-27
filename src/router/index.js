@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Main from "@/components/Main";
-import Users from "@/components/Users";
+// import Users from "@/components/Users";
 import Groups from "@/components/Groups";
 import OUnits from "@/components/OrganizationalUnits";
 import Security from "@/components/Security";
@@ -18,6 +18,7 @@ import Typography from "@/components/Dashboard/Views/Typography";
 import Icons from "@/components/Dashboard/Views/Icons";
 import Maps from "@/components/Dashboard/Views/Maps";
 import Notifications from "@/components/Dashboard/Views/Notifications";
+import UsersList from "@/components/Dashboard/Views/UsersList";
 
 Vue.use(Router);
 
@@ -30,8 +31,8 @@ export default new Router({
     },
     {
       path: "/users",
-      name: "users",
-      component: Users
+      name: "Users",
+      component: UsersList
     },
     {
       path: "/groups",
@@ -87,6 +88,11 @@ export default new Router({
           path: "maps",
           name: "Maps",
           component: Maps
+        },
+        {
+          path: "userslist",
+          name: "UsersList",
+          component: UsersList
         },
         {
           path: "notifications",
