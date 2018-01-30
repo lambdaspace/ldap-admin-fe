@@ -1,6 +1,6 @@
 <template>
   <div>
-    Groups component ANAN SIKIM
+    Groups component
   </div>
 </template>
 
