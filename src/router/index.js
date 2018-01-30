@@ -1,6 +1,5 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Main from "@/components/Main";
 // import Users from "@/components/Users";
 import Groups from "@/components/Groups";
 import OUnits from "@/components/OrganizationalUnits";
@@ -19,45 +18,15 @@ import Icons from "@/components/Dashboard/Views/Icons";
 import Maps from "@/components/Dashboard/Views/Maps";
 import Notifications from "@/components/Dashboard/Views/Notifications";
 import UsersList from "@/components/Dashboard/Views/UsersList";
+import Users from "@/components/Users";
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: "/main",
-      name: "main",
-      component: Main
-    },
-    {
-      path: "/users",
-      name: "Users",
-      component: UsersList
-    },
-    {
-      path: "/groups",
-      name: "groups",
-      component: Groups
-    },
-    {
-      path: "/ous",
-      name: "ounits",
-      component: OUnits
-    },
-    {
-      path: "/sos",
-      name: "security",
-      component: Security
-    },
-    {
       path: "/",
       component: DashboardLayout,
-      redirect: "/admin/overview"
-    },
-    {
-      path: "/admin",
-      component: DashboardLayout,
-      redirect: "/admin/overview",
       children: [
         {
           path: "overview",
@@ -98,6 +67,26 @@ export default new Router({
           path: "notifications",
           name: "Notifications",
           component: Notifications
+        },
+        {
+          path: "users",
+          name: "Users",
+          component: Users
+        },
+        {
+          path: "groups",
+          name: "groups",
+          component: Groups
+        },
+        {
+          path: "ous",
+          name: "ounits",
+          component: OUnits
+        },
+        {
+          path: "sos",
+          name: "security",
+          component: Security
         }
       ]
     },
