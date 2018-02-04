@@ -7,6 +7,12 @@
             <template slot="header">
               <h4 class="card-title">Users</h4>
               <p class="card-category">Here is a subtitle for this table</p>
+              <router-link
+                class="btn btn-info btn-fill float-right"
+                :to="'users/add'"
+              >
+                Add User
+              </router-link>
             </template>
             <div class="table-responsive">
               <l-table

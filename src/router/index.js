@@ -19,6 +19,8 @@ import Maps from "@/components/Dashboard/Views/Maps";
 import Notifications from "@/components/Dashboard/Views/Notifications";
 import UsersList from "@/components/Dashboard/Views/UsersList";
 import Users from "@/components/Users";
+// import UsersAdd from "@/components/UsersAdd";
+import UsersAdd from "@/components/Dashboard/Views/UserProfile/AddUserForm";
 
 Vue.use(Router);
 
@@ -72,6 +74,11 @@ export default new Router({
           path: "users",
           name: "Users",
           component: Users
+        },
+        {
+          path: "users/add",
+          name: "UsersAdd",
+          component: UsersAdd
         },
         {
           path: "groups",
