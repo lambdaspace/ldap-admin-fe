@@ -8,6 +8,8 @@
               <div>
                 <h4 class="card-title">{{ singleUser.sn }}</h4>
               </div>
+            </div>
+            <div>
               <div>
                 {{ singleUser.uid }}
               </div>
@@ -21,6 +23,17 @@
                 {{ singleUser.cn }}
               </div>
             </div>
+            <button
+              class="btn btn-danger btn-fill float-right"
+              @click.prevent="deleteUser">
+              Delete User
+            </button>
+            <router-link
+              class="btn btn-warning btn-fill float-right"
+              :to="'/users/:sn/edit'"
+            >
+              Edit User
+            </router-link>
           </card>
         </div>
       </div>
@@ -61,6 +74,16 @@ export default {
           this.singleUser.objectClass = data[0]["objectClass"][0];
           this.singleUser.cn = data[0]["cn"][0];
         });
+    },
+    deleteUser() {
+      fetch(
+        `http://localhost:8443/objects/inetOrgPerson/${this.$route.params.cn}/`,
+        {
+          method: "delete"
+        }
+      ).then(data => {
+        this.$router.push("/users");
+      });
     }
   }
 };
