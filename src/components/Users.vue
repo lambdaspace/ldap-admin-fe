@@ -55,7 +55,7 @@ export default {
       fetch("http://localhost:8443/objects/inetOrgPerson/")
         .then(resp => resp.json()) // Transform the data into json
         .then(data => {
-          for (var i = 0, len = data.length; i < len; i++) {
+          for (let i = 0, len = data.length; i < len; i++) {
             this.table1.data.push({
               sn: data[i]["sn"][0],
               uid: data[i]["uid"][0],
