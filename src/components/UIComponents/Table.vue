@@ -20,6 +20,9 @@
             v-if="hasValue(item, column)">
             {{ itemValue(item, column) }}
           </td>
+          <td>
+            <router-link :to="{ name: 'SingleUser', params: { cn: item.cn }}">View</router-link>
+          </td>
         </slot>
       </tr>
     </tbody>
