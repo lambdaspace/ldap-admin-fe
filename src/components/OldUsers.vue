@@ -15,6 +15,7 @@
                 :data="table1.data"/>
             </div>
           </card>
+
         </div>
 
         <div class="col-12">
@@ -35,6 +36,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import LTable from "@/components/UIComponents/Table";
 import Card from "@/components/UIComponents/Cards/Card";
@@ -78,6 +80,7 @@ const tableData = [
   }
 ];
 export default {
+  name: "OldUsers",
   components: {
     LTable,
     Card
