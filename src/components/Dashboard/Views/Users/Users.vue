@@ -31,7 +31,7 @@
 import LTable from "@/components/UIComponents/Table";
 import Card from "@/components/UIComponents/Cards/Card";
 
-const tableColumns = ["Sn", "Uid", "Description", "ObjectClass", "Cn"];
+const tableColumns = ["Surname", "Uid", "Description", "ObjectClass", "Cn"];
 
 export default {
   name: "Users",
@@ -52,12 +52,12 @@ export default {
   },
   methods: {
     getUsers() {
-      fetch(process.env.API_URL + "/objects/inetOrgPerson/")
+      fetch(`${process.env.API_URL}/objects/inetOrgPerson/`)
         .then(resp => resp.json()) // Transform the data into json
         .then(data => {
           for (let i = 0, len = data.length; i < len; i++) {
             this.table1.data.push({
-              sn: data[i]["sn"][0],
+              surname: data[i]["sn"][0],
               uid: data[i]["uid"][0],
               description: data[i]["description"][0],
               objectclass: data[i]["objectClass"][0],
