@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     getUsers() {
-      fetch("http://localhost:8443/objects/inetOrgPerson/")
+      fetch(process.env.API_URL + "/objects/inetOrgPerson/")
         .then(resp => resp.json()) // Transform the data into json
         .then(data => {
           for (let i = 0, len = data.length; i < len; i++) {
