@@ -1,11 +1,10 @@
 <template>
   <div
-    class="form-group"
-    :class="{'input-group': hasIcon}">
+  class="form-group">
     <slot name="label">
       <label
         v-if="label"
-        class="control-label">
+        class="">
         {{ label }}
       </label>
     </slot>

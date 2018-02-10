@@ -9,21 +9,21 @@
               class="card-title">Add User</h4>
             <form>
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-12">
                   <fg-input
                     type="text"
-                    label="SN"
-                    placeholder="User sn"
+                    label="Surname"
+                    placeholder="User surname"
                     v-model="user.sn"/>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-12">
                   <fg-input
                     type="text"
                     label="Uid"
                     placeholder="User uid"
                     v-model="user.uid"/>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-12">
                   <fg-input
                     type="text"
                     label="Description"
@@ -33,18 +33,18 @@
               </div>
 
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <fg-input
                     type="text"
                     label="Object Class"
-                    placeholder="User Object Class"
+                    placeholder="User object class"
                     v-model="user.objectClass"/>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <fg-input
                     type="text"
-                    label="Cn"
-                    placeholder="User cn"
+                    label="Common Name"
+                    placeholder="User common name"
                     v-model="user.cn"/>
                 </div>
               </div>

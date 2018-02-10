@@ -18,9 +18,12 @@ import Icons from "@/components/Dashboard/Views/Icons";
 import Maps from "@/components/Dashboard/Views/Maps";
 import Notifications from "@/components/Dashboard/Views/Notifications";
 import UsersList from "@/components/Dashboard/Views/UsersList";
-import Users from "@/components/Users";
-import SingleUser from "@/components/Dashboard/Views/SingleUser";
-import UsersAdd from "@/components/Dashboard/Views/UserProfile/AddUserForm";
+
+//Users pages
+import Users from "@/components/Dashboard/Views/Users/Users";
+import SingleUser from "@/components/Dashboard/Views/Users/SingleUser";
+import EditUser from "@/components/Dashboard/Views/Users/EditUserForm";
+import UsersAdd from "@/components/Dashboard/Views/Users/AddUserForm";
 
 Vue.use(Router);
 
@@ -84,6 +87,11 @@ export default new Router({
           path: "users/:cn",
           name: "SingleUser",
           component: SingleUser
+        },
+        {
+          path: "users/:cn/edit",
+          name: "EditUser",
+          component: EditUser
         },
         {
           path: "groups",

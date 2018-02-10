@@ -30,7 +30,7 @@
             </button>
             <router-link
               class="btn btn-warning btn-fill float-right"
-              :to="'/users/:sn/edit'"
+              :to="'/users/:cn/edit'"
             >
               Edit User
             </router-link>
@@ -64,7 +64,7 @@ export default {
   methods: {
     getUser() {
       fetch(
-        `http://localhost:8443/objects/inetOrgPerson/${this.$route.params.cn}/`
+        `${process.env.API_URL}/objects/inetOrgPerson/${this.$route.params.cn}/`
       )
         .then(resp => resp.json()) // Transform the data into json
         .then(data => {
@@ -77,7 +77,9 @@ export default {
     },
     deleteUser() {
       fetch(
-        `http://localhost:8443/objects/inetOrgPerson/${this.$route.params.cn}/`,
+        `${process.env.API_URL}//objects/inetOrgPerson/${
+          this.$route.params.cn
+        }/`,
         {
           method: "delete"
         }
