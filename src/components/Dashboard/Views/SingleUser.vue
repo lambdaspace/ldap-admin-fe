@@ -30,7 +30,7 @@
             </button>
             <router-link
               class="btn btn-warning btn-fill float-right"
-              :to="'/users/:sn/edit'"
+              :to="'/users/:cn/edit'"
             >
               Edit User
             </router-link>
